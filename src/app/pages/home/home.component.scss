@@ -1,0 +1,78 @@
+@import "../../../styles/@styles";
+
+:host {
+  .main-content-height {
+    background-color: $background-grey;
+
+    .partners {
+      padding: 120px 0;
+    }
+
+    .feature, .faq, .about {
+      padding-bottom: 120px;
+    }
+
+    .numbers {
+      position: relative;
+
+      &_blur {
+        width: 200px;
+        height: 150px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(150px);
+        position: absolute;
+        top: -1rem;
+        right: 25rem;
+      }
+    }
+
+    .about {
+      position: relative;
+
+      &_blur {
+        width: 200px;
+        height: 120px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        bottom: 6rem;
+        left: 7rem;
+      }
+    }
+
+    .faq {
+      position: relative;
+
+      &_blur {
+        width: 200px;
+        height: 120px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        bottom: -6rem;
+        left: 7rem;
+      }
+    }
+
+
+    @media screen and (max-width: 360px) {
+      .numbers, .about, .faq {
+        &_blur {
+          display: none;
+        }
+      }
+
+      .feature {
+        padding-top: 72px;
+      }
+
+      .about {
+        padding-bottom: 0;
+      }
+
+      .partners {
+        padding: 0;
+      }
+    }
+  }
+}

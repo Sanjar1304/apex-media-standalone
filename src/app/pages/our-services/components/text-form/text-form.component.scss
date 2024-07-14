@@ -1,0 +1,109 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .text-form {
+
+    &__block {
+      @include flex(row, flex-start, space-between);
+
+      gap: $offset-40px;
+      padding-bottom: 160px;
+
+
+      &__left {
+        @include flex(column, flex-start, flex-start);
+
+        gap: $offset-32px;
+        width: 936px;
+
+        &__top {
+          @include flex(column, flex-start, flex-start);
+
+          gap: $offset-16px;
+
+          &_text {
+            color: #D2D2D2;
+          }
+        }
+
+        &__bottom {
+          @include flex(column, flex-start, flex-start);
+
+          gap: $offset-6px;
+
+          &_text {
+            color: #D2D2D2;
+          }
+
+          &_list {
+            &_item {
+              color: #D2D2D2;
+            }
+          }
+        }
+      }
+
+      &__right {
+        @include flex(column, flex-start, flex-start);
+
+        gap: $offset-32px;
+        padding: $offset-40px;
+        border: $offset-1px solid #FFFFFF33;
+        border-radius: $offset-16px;
+
+        &__top {
+          @include flex(column, center, center);
+
+          gap: $offset-12px;
+
+          &_title {
+            color: $main-white;
+          }
+
+          &_text {
+            color: $light-grey;
+            text-align: center;
+          }
+        }
+
+        &__form {
+          @include flex(column, center, center);
+
+          gap: $offset-32px;
+          width: 464px;
+
+
+          &__first {
+            @include flex(column, flex-start, center);
+
+            &_input {
+              width: 320px;
+              height: $offset-40px;
+              padding: 0 $offset-16px;
+              color: $main-white;
+              background-color: #333333;
+              border: 1px solid #FFFFFF29;
+              border-radius: $offset-8px;
+            }
+          }
+
+          &_button {
+            border: none;
+            color: $main-white;
+            border-radius: $offset-30px;
+            background-color: $main-red;
+            padding: $offset-10px $offset-32px;
+          }
+        }
+      }
+    }
+  }
+
+  h3, p {
+    margin: 0;
+  }
+
+  li {
+    color: white;
+  }
+}

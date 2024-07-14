@@ -1,0 +1,167 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .main-content-height {
+    background-color: $background-grey;
+    border-top: $offset-4px solid $main-red;
+
+    .header_background {
+      height: 210px;
+      background-image: url("../../../../../assets/images/bg-img/head-bg.png");
+      z-index: 999;
+      position: relative;
+    }
+
+    .company-nums {
+      position: relative;
+      z-index: 9999;
+
+      .blur {
+        width: 150px;
+        height: 70px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        z-index: 1;
+      }
+    }
+
+    .news-card {
+      position: relative;
+      padding-bottom: 120px;
+      z-index: 9999;
+
+      .card-content{
+        &__block {
+          @include flex(column, flex-start, flex-start);
+
+          gap: $offset-38px;
+
+          &__top {
+            @include flex(column, flex-start, flex-start);
+
+            gap: $offset-24px;
+
+            &_button {
+              padding: 10px 32px;
+              border-radius: 30px;
+              border: 2px solid #FFFFFF66;
+              background-color: transparent;
+              color: $main-white;
+            }
+
+            &_date {
+              color: $main-white;
+              opacity: 60%;
+            }
+          }
+
+          &__bottom {
+            @include flex (row, flex-start, flex-start);
+
+            gap: $offset-40px;
+
+            &__left {
+              @include flex(column, flex-start, flex-start);
+
+              width: 936px;
+              gap: $offset-40px;
+
+              &_image {
+                width: 936px;
+              }
+
+              &__texts {
+                @include flex(column, flex-start, flex-start);
+
+                gap: $offset-32px;
+
+                &__up {
+                  @include flex(column, flex-start,flex-start);
+
+                  gap: $offset-16px;
+
+                  &_text {
+                    color: $main-white;
+                  }
+                }
+
+                &__down {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-16px;
+
+                  &__text {
+                    color: $main-white;
+
+                    &__list {
+                      padding-top: $offset-16px;
+                    }
+
+                    &_alone {
+                      padding-top: $offset-16px;
+                    }
+                  }
+                }
+
+                &_button {
+                  padding: 10px 32px;
+                  border-radius: 30px;
+                  color: $main-white;
+                  border: 2px solid #FFFFFF66;
+                  background-color: transparent;
+                }
+              }
+            }
+
+            &__right {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-24px;
+
+              &__card {
+                border-radius: $offset-16px;
+                background-color: #FFFFFF0A;
+
+                &_image {
+                  width: 464px;
+                  border-top-right-radius: $offset-16px;
+                  border-top-left-radius: $offset-16px;
+                }
+
+                &__items {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-12px;
+                  padding: $offset-24px;
+
+                  &_date {
+                    color: $main-white;
+                    opacity: 60%;
+                  }
+
+                  &_text {
+                    color: $main-white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .blur {
+        width: 200px;
+        height: 100px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        bottom: -6rem;
+        left: 3rem;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,40 @@
+<section class="container news-card">
+  <div class="news-card__block">
+    <h1 class="news-card__block_title h1">Новости</h1>
+    <div class="news-card__block__cards">
+      @for(card of newsCardList; track card.id){
+        <div class="news-card__block__cards__item">
+          <img class="news-card__block__cards__item_img" [src]="card.image" alt="">
+          <div class="news-card__block__cards__item__bottom">
+            <p class="news-card__block__cards__item__bottom_date p">{{ card.date }}</p>
+            <h3 class="news-card__block__cards__item__bottom_text h3">{{ card.title }}</h3>
+            <button class="news-card__block__cards__item__bottom_button p" (click)="openCardContent(card.id)">Подробнее</button>
+          </div>
+        </div>
+      } @empty {
+        <div>There is no cards</div>
+      }
+
+      <div class="news-card__block__cards__paginator">
+        <button class="news-card__block__cards__paginator__button" (click)="setPage(currentPage - 1)" [disabled]="currentPage === 1">
+          <img class="news-card__block__cards__paginator__button_icon" ngSrc="./assets/icons/chevron-right.svg" alt="" height="14" width="8">
+        </button>
+
+        <div class="news-card__block__cards__paginator__nums">
+          @for(page of [].constructor(totalPages); track page){
+            <div
+              class="news-card__block__cards__paginator__nums_item p"
+              [ngClass]="{'active': isPageActive($index+ 1)}"
+              (click)="setPage($index + 1)">
+              {{ $index + 1 }}
+            </div>
+          }
+        </div>
+
+        <button class="news-card__block__cards__paginator__button" (click)="setPage(currentPage + 1)" [disabled]="currentPage === totalPages">
+          <img class="news-card__block__cards__paginator__button_icon" src="./assets/icons/chevron-left.svg" alt="" height="14" width="8">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

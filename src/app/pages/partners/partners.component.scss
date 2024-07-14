@@ -1,0 +1,116 @@
+@import "../../../styles/@styles";
+
+:host {
+  .main-content-height {
+    background-color: $background-grey;
+    border-top: $offset-4px solid $main-red;
+
+    .header_background {
+      height: 210px;
+      background-image: url("../../../assets/images/bg-img/head-bg.png");
+      z-index: 999;
+      position: relative;
+    }
+
+    .company-nums {
+      position: relative;
+      z-index: 9999;
+
+      .blur {
+        width: 150px;
+        height: 70px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        z-index: 1;
+      }
+    }
+
+    .partners {
+      position: relative;
+      padding-bottom: 120px;
+      z-index: 9999;
+
+      .partners-content {
+
+        &__block {
+          padding-bottom: $offset-80px;
+
+          &__first {
+            @include flex(column, flex-start, flex-start);
+
+            gap: $offset-80px;
+
+            &__top {
+              &_title {
+                padding-bottom: $offset-40px;
+              }
+
+              &_text {
+                color: #D2D2D2;
+              }
+            }
+
+            &__bottom {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-32px;
+
+              &__cards {
+                @include flex(row, flex-start, center);
+
+                gap: $offset-24px;
+
+                &__item {
+                  @include flex(column, center, center);
+
+                  gap: $offset-32px;
+
+                  &_number {
+                    @include flex(row, center, center);
+
+                    width: 64px;
+                    height: 64px;
+                    font-weight: 600;
+                    border-radius: 100%;
+                    color: $main-red;
+                    background-color: #00000066;
+                  }
+
+                  &_text {
+                    padding: 0 $offset-12px;
+                    text-align: center;
+                  }
+
+                  &__button {
+                    @include flex(row, center, center);
+
+                    gap: $offset-12px;
+                    color: $main-white;
+                    border-radius: $offset-30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .faq {
+          padding-bottom: $offset-80px;
+        }
+      }
+
+      .blur {
+        width: 200px;
+        height: 100px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        bottom: -6rem;
+        left: 3rem;
+      }
+    }
+  }
+}

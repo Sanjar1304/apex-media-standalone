@@ -1,0 +1,51 @@
+<main class="main-content-height">
+  <div class="header_background"></div>
+  <div class="company-nums">
+    <app-company-in-nums></app-company-in-nums>
+    <div class="blur"></div>
+  </div>
+  <div class="partners">
+    <section class="container partners-content">
+      <div class="partners-content__block">
+        <div class="partners-content__block__first">
+          <div class="partners-content__block__first__top">
+            <h1 class="partners-content__block__first__top_title h1">Партнерам</h1>
+            <p class="partners-content__block__first__top_text p">
+              Каждый предприниматель в Ташкенте, открывающий или расширяющий свой бизнес, должен найти компанию,
+              способную помочь в изготовлении качественной, современной, высокотехнологичной наружной рекламы.
+              Наш коллектив имеет достаточный уровень профессионализма, что позволяет решить задачи любой сложности
+              в кратчайшие сроки. Мы способны изготовить любой вид рекламной продукции, от печати на визитках,
+              до размещения рекламы на лед-экранах в качестве наружной рекламы. Клиентам компании гарантируется:
+            </p>
+          </div>
+          <div class="partners-content__block__first__bottom">
+            <h1 class="partners-content__block__first__bottom_title h2">Схема работы</h1>
+            <div class="partners-content__block__first__bottom__cards">
+              @for(card of partnersList; track card){
+                <div class="partners-content__block__first__bottom__cards__item">
+                  <div class="partners-content__block__first__bottom__cards__item_number h3">{{ card.number}}</div>
+                  <p class="partners-content__block__first__bottom__cards__item_text h3">{{ card.text }}</p>
+                  @if(card.button){
+                    <button class="partners-content__block__first__bottom__cards__item__button"
+                            [style.background-color]="card?.button?.buttonBgColor"
+                            [style.border]="card?.button?.buttonBorder"
+                            [style.padding]="card.button.padding"
+                    >
+                      <img class="partners-content__block__first__bottom__cards__item__button_icon" [src]="card?.button?.buttonImage" alt="" />
+                      <span class="partners-content__block__first__bottom__cards__item__button_text p">{{ card?.button?.buttonText }}</span>
+                    </button>
+                  }
+                </div>
+              } @empty {
+                <div>No cards</div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-faq class="faq"></app-faq>
+      <app-home-partners class="home-partners"></app-home-partners>
+    </section>
+    <div class="blur"></div>
+  </div>
+</main>

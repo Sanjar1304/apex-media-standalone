@@ -1,0 +1,100 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .news-card {
+    &__block {
+      @include flex(column, start, start);
+
+      gap: $offset-40px;
+
+      &__cards {
+        @include flex(row, flex-start, flex-start);
+
+        flex-wrap: wrap;
+        gap: $offset-24px;
+
+        &__item {
+          background-color: #FFFFFF0A;
+          border-radius: $offset-16px;
+
+
+          &_img {
+            border-top-right-radius: $offset-16px;
+            border-top-left-radius: $offset-16px;
+          }
+
+          &__bottom {
+            @include flex(column, flex-start, flex-start);
+
+            width: 680px;
+            padding: $offset-32px 0 $offset-32px $offset-32px;
+
+            &_date {
+              opacity: 60%;
+              color: $main-white;
+              padding-bottom: $offset-12px;
+            }
+
+            &_text {
+              width: 644px;
+              padding-bottom: $offset-24px;
+            }
+
+            &_button {
+              margin-left: auto;
+              color: $main-white;
+              border-radius: $offset-30px;
+              background-color: transparent;
+              padding: $offset-16px $offset-32px;
+              border: $offset-2px solid #FFFFFF66;
+            }
+          }
+        }
+
+        &__paginator {
+          @include flex(row, center, flex-start);
+
+          gap: $offset-24px;
+          padding-top: $offset-16px;
+
+          &__button {
+            @include flex(row, center, center);
+
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            border: 2px solid #FFFFFF66;
+            background-color: transparent;
+
+            &_icon {
+              opacity: 40%;
+            }
+          }
+
+          &__nums {
+            @include flex(row, center, center);
+
+            &_item {
+              @include flex(row, center, center);
+
+              color: $main-white;
+              padding: $offset-8px $offset-12px;
+              cursor: pointer;
+            }
+
+            .active {
+              width: 48px;
+              height: 48px;
+              border-radius: 100%;
+              background-color: #FFFFFF1A;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1, p {
+    margin: 0;
+  }
+}

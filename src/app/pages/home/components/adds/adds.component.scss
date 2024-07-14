@@ -1,0 +1,50 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .adds {
+    @include flex(row, center, center);
+
+    min-height: 560px;
+    border-top: $offset-4px solid $main-red;
+    background-image: url("../../../../../assets/images/bg-img/head-bg.png");
+    position: relative;
+    z-index: 111;
+
+    &__block {
+      @include flex(row, center, space-between);
+
+      max-height: 505px !important;
+      padding-top: 4rem;
+
+      &_text {
+        max-width: 636px;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    .adds {
+      @include flex(row, center, center);
+
+      min-height: 320px;
+      border-top: $offset-4px solid $main-red;
+      background-image: url("../../../../../assets/images/bg-img/head-bg.png");
+      position: relative;
+      z-index: 111;
+
+      &__block {
+        padding-top: 0;
+
+        &_text {
+          max-width: 328px;
+          padding: $offset-32px $offset-16px $offset-48px;
+        }
+
+        &_img {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<section class="container partners">
+  <div class="partners__block">
+    <div class="partners__block__top">
+      <h1 class="partners__block__top_title h1">{{'homePage.sections.partners.title' | transloco}}</h1>
+      <h2 class="partners__block__top_subtitle h4">{{'homePage.sections.partners.subTitle' | transloco}}</h2>
+    </div>
+
+    <div class="partners__block__list">
+      <div class="partners__block__list__items">
+        @for(partner of partnersList; track partner.logo){
+          <img [src]="partner.logo" class="partners__block__list__items_icon" alt="partner logo">
+        }
+      </div>
+    </div>
+  </div>
+</section>

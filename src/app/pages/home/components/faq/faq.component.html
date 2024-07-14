@@ -1,0 +1,30 @@
+<section class="container faq">
+  <div class="faq__block">
+    <div class="faq__block__top">
+      <h1 class="faq__block__top_title h1">{{'homePage.sections.faq.title' | transloco}}</h1>
+      <h2 class="faq__block__top_subtitle h4">{{'homePage.sections.faq.subTitle' | transloco}}</h2>
+    </div>
+    <div class="faq__block__items">
+      @for(item of faqList; track item){
+      <mat-accordion class="faq__block__items__accordion">
+        <mat-expansion-panel class="faq__block__items__accordion__panel"
+                             (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+
+            <mat-expansion-panel-header class="faq__block__items__accordion__panel__header">
+              <mat-panel-title class="faq__block__items__accordion__panel__header_title h3">
+                {{ item.title | transloco}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="faq__block__items__accordion__panel_text p">
+              {{ item.text | transloco}}
+            </p>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+      } @empty {
+        <div>Empty accordion</div>
+      }
+    </div>
+  </div>
+</section>

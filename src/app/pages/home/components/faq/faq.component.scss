@@ -1,0 +1,93 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .faq {
+    &__block {
+      @include flex(column, flex-start, space-between);
+
+      gap: $offset-40px;
+
+      &__top {
+        gap: $offset-3px;
+      }
+
+      &__items {
+        @include flex(column, flex-start, space-between);
+
+        gap: $offset-12px;
+
+        &__accordion {
+           &__panel {
+             &_text {
+               color: $light-grey;
+             }
+           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .faq {
+      &__block {
+        @include flex(column, flex-start, flex-start);
+
+        gap: $offset-20px;
+        padding: $offset-24px 0;
+
+      }
+    }
+  }
+}
+
+
+::ng-deep {
+  .mat-expansion-panel {
+    width: 1400px;
+    padding: $offset-24px $offset-22px;
+    background-color: $background-black !important;
+  }
+
+  mat-expansion-panel-header {
+    background-color: $background-black !important;
+  }
+
+  mat-expansion-panel-header:hover,
+  mat-expansion-panel-header:focus,{
+    background-color: $background-black !important;
+  }
+
+  .mat-expansion-indicator::before {
+    color: $main-red !important;
+  }
+
+  .mat-expansion-indicator::after {
+    color: $main-red !important;
+    padding: 10px !important;
+  }
+
+  .mat-accordion .mat-expansion-panel:last-of-type,
+  .mat-accordion .mat-expansion-panel:first-of-type{
+    border-radius: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  ::ng-deep {
+    .mat-expansion-panel {
+      width: 280px !important;
+    }
+
+    .mat-expansion-panel-header {
+      padding: 0 !important;
+    }
+
+    .mat-expansion-panel-body {
+      padding: 0 !important;
+    }
+
+    .mat-expansion-indicator::after {
+      padding: 5px !important;
+    }
+  }
+}

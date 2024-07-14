@@ -1,0 +1,143 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .services {
+
+     &__block {
+        @include flex(column, flex-start, space-between);
+
+       gap: $offset-40px;
+
+       &__titles {
+         @include flex(column, flex-start, space-between);
+
+         gap: $offset-3px;
+       }
+
+       &__list {
+         overflow-x: auto;
+         white-space: nowrap;
+
+         &__cards {
+           @include flex(row, stretch, space-between);
+
+           gap: $offset-24px;
+           overflow: hidden;
+
+           &__wrapper {
+             @include flex(column, flex-start, space-between);
+
+             overflow: hidden;
+             padding: $offset-48px;
+             border-radius: $offset-16px;
+             position: relative;
+             background-color: $background-black;
+
+             &_radial {
+               width: 200px;
+               height: 200px;
+               background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+               filter: blur(150px);
+               position: absolute;
+               top: -4.5rem;
+               left: -.3.5rem;
+             }
+
+             &_img {
+               padding-bottom: $offset-24px;
+             }
+
+             &_title {
+               width: 612px;
+               padding-bottom: $offset-12px;
+             }
+
+             &_text {
+               text-wrap: initial;
+               color: $light-grey;
+               padding-bottom: $offset-24px;
+             }
+
+             &_button {
+               color: $main-white;
+               padding: $offset-10px $offset-32px;
+               border-radius: $offset-30px;
+               border: $offset-1px solid $light-grey;
+               background-color: transparent;
+             }
+           }
+         }
+       }
+     }
+  }
+
+
+  @media screen and (max-width: 360px) {
+    .services {
+      &__block {
+        @include flex(column, flex-start, flex-start);
+
+        max-width: 328px;
+        width: 100%;
+        padding: 24px 0;
+        gap: $offset-20px;
+
+        &__titles {
+          @include flex(column, flex-start, flex-start);
+
+          gap: $offset-3px;
+        }
+
+        &__list {
+          @include flex(row, center, flex-start);
+          width: 100%;
+          white-space: nowrap;
+
+          &__cards {
+            @include flex(row, flex-start, space-between);
+            width: 100%;
+            scrollbar-width: none;
+            overflow-x: scroll;
+            gap: $offset-8px;
+
+            &__wrapper {
+              @include flex(column, flex-start, center);
+
+              gap: $offset-20px;
+              padding: $offset-24px;
+              min-width: 85%;
+
+              &_radial {
+                filter: blur(120px);
+                position: absolute;
+                top: -5rem;
+                left: -12rem;
+              }
+
+              &_img {
+                width: 40px;
+                height: 40px;
+                padding-bottom: 0;
+              }
+
+              &_title {
+                width: 252px;
+                padding-bottom: 0;
+              }
+
+              &_text {
+                width: 242px;
+                padding-bottom: 0;
+              }
+
+              &_button {
+                font-weight: 600;
+                border: $offset-2px solid $light-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

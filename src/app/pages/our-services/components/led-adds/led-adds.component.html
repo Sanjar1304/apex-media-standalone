@@ -1,0 +1,46 @@
+<section class="container led-adds">
+  <div class="led-adds__block">
+    <h1 class="led-adds__block_title h1">{{ 'servicePage.sliderTitle' | transloco }}</h1>
+    <swiper-container
+      loop="true"
+      speed="500"
+      slides-per-view="3"
+      space-between="24"
+      class="led-adds__block__cards">
+      @for(slider of swiperSlides; track slider.id) {
+        <swiper-slide class="led-adds__block__cards__card">
+          <img class="led-adds__block__cards__card_img" [src]="slider.image" [alt]="slider.title">
+          <img class="led-adds__block__cards__card_icon" [src]="slider.sliderIcon" alt="">
+          <div class="led-adds__block__cards__card__content">
+            <h3 class="led-adds__block__cards__card__content_title h3-slider">{{ slider.title | transloco }}</h3>
+            <div class="led-adds__block__cards__card__content__address">
+              <h3 class="p-slider-bold">{{ slider.address.title | transloco }}:</h3>
+              <p class="p-slider-light">{{ slider.address.addressName | transloco }}</p>
+            </div>
+            <div class="led-adds__block__cards__card__content__orentir">
+              <h3 class="p-slider-bold">{{ slider.orentir.title | transloco }}:</h3>
+              <p class="p-slider-light">{{ slider.orentir.orentirName | transloco }}</p>
+            </div>
+            <div class="led-adds__block__cards__card__content__size">
+              <h3 class="p-slider-bold">{{ slider.size | transloco }}:</h3>
+              <p class="p-slider-light">3х4</p>
+            </div>
+          </div>
+        </swiper-slide>
+      } @empty {
+        <div>There is no slide </div>
+      }
+    </swiper-container>
+    <div class="led-adds__block__pagination">
+      @for(dots of paginationDots; track dots.id){
+        <span
+          class="led-adds__block__pagination_items"
+          [class.active]="dots.active"
+          (click)="goToSlide(dots.index)"
+        ></span>
+      } @empty {
+        <div>There is no pagination</div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .numbers {
+    @include flex(row, center, center);
+    position: relative;
+    z-index: 9999;
+
+    &_bg-image {
+      position: relative;
+      top: -4rem;
+      object-fit: cover;
+    }
+
+    &__block {
+      @include flex(row, center, center);
+      gap: 8rem;
+      position: absolute;
+      top: -1.5rem;
+
+      &__info {
+        @include flex(row, flex-start, space-between);
+        gap: $offset-12px;
+
+        &__items {
+          @include flex(row, center, space-between);
+          gap: $offset-38px;
+          padding: $offset-18px 0;
+
+          &_text {
+            width: 240px;
+            color: $main-white;
+          }
+        }
+      }
+
+      &__button {
+        @include flex(row, center, center);
+        gap: $offset-14px;
+        height: 56px;
+        border: none;
+        border-radius: $offset-30px;
+        background-color: $main-red;
+        padding: $offset-16px $offset-32px $offset-16px $offset-16px;
+
+        &_text {
+          color: $main-white;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .numbers {
+      @include flex(column, center, flex-start);
+
+      width: 328px;
+      height: 400px;
+      position: relative;
+      top: -48px;
+      z-index: 999;
+      padding-bottom: 92px;
+
+      &_bg-image {
+        display: none;
+      }
+
+      &__block {
+        @include flex(column, center, center);
+
+        gap: 20px;
+        padding: 24px;
+        border-radius: $offset-16px;
+        background-color: $background-black;
+
+        &__info {
+          @include flex(column, flex-start, space-between);
+
+          &__items {
+            @include flex(column, flex-start, space-between);
+          }
+        }
+      }
+    }
+  }
+}

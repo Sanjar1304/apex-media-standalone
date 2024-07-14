@@ -1,0 +1,50 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .feature {
+    @include flex(column, center, center);
+
+    &__block {
+      @include flex(row, flex-start, center);
+
+      gap: $offset-36px;
+      height: 100%;
+
+      &__items {
+        @include flex(column, center, flex-start);
+
+        padding: 0 $offset-12px;
+        gap: $offset-24px;
+
+        &__content {
+          @include flex(column, center, center);
+
+          padding: 0 $offset-12px;
+          gap: $offset-12px;
+
+          &_title {
+            color: $main-white;
+            text-align: center;
+          }
+
+          &_text {
+            color: $light-grey;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .feature {
+
+      &__block {
+        @include flex(column, center, center);
+
+        width: 328px;
+        gap: $offset-24px;
+      }
+    }
+  }
+}

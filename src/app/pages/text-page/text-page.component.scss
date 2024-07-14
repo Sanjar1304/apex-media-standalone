@@ -1,0 +1,237 @@
+@import "../../../styles/@styles";
+
+:host {
+  .main-content-height {
+    background-color: $background-grey;
+    border-top: $offset-4px solid $main-red;
+
+    .header_background {
+      height: 210px;
+      background-image: url("../../../assets/images/bg-img/head-bg.png");
+      z-index: 999;
+      position: relative;
+    }
+
+    .company-nums {
+      position: relative;
+      z-index: 9999;
+
+      .blur {
+        width: 150px;
+        height: 70px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        z-index: 1;
+      }
+    }
+
+    .heading {
+      position: relative;
+      padding-bottom: 120px;
+      z-index: 9999;
+
+      .heading-content {
+        &__block {
+          @include flex(row, flex-start, flex-start);
+
+          gap: $offset-40px;
+
+          &__left {
+            @include flex(column, flex-start, flex-start);
+
+            width: 936px;
+            gap: $offset-40px;
+
+            &__h1 {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-40px;
+
+              &_title {
+                @include font($font-size-43px,  $line-60px);
+
+                font-weight: 700;
+                color: $main-white;
+              }
+
+              &_text {
+                @include font($font-size-17px, $line-23px);
+
+                color: #D2D2D2;
+
+                &_blue {
+                  color: #3FACE9;
+                  text-decoration: underline;
+                }
+              }
+            }
+
+            &__h2 {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-16px;
+
+              &_title {
+                @include font($font-size-34px, $line-47px);
+
+                font-weight: 700;
+                color: $main-white;
+              }
+
+              &_text {
+                @include font($font-size-17px, $line-23px);
+
+                font-weight: 400;
+                color: #D2D2D2;
+
+                &__list {
+                  list-style: none;
+                  padding: 0;
+
+                  &_item {
+                    color: #D2D2D2;
+                    padding-top: $offset-16px;
+                  }
+                }
+              }
+            }
+
+            &__h3 {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-16px;
+
+              &_title {
+                @include font($font-size-28px, $line-39px);
+
+                font-weight: 700;
+                color: $main-white;
+              }
+
+              &__text {
+                &__list {
+                  padding-left: $offset-15px;
+
+                  &_item {
+                    @include font($font-size-17px, $line-23px);
+
+                    color: #D2D2D2;
+                    font-weight: 400;
+                    padding-top: $offset-15px;
+                  }
+                }
+              }
+            }
+
+            &__h4 {
+              @include flex(column, flex-start, flex-start);
+
+              gap: $offset-16px;
+
+              &_title {
+                @include font($font-size-24px, $line-33px);
+
+                font-weight: 700;
+                color: $main-white;
+              }
+
+              &__text {
+                &__list {
+                  padding-left: $offset-15px;
+
+                  &_item {
+                    @include font($font-size-17px, $line-23px);
+
+                    color: #D2D2D2;
+                    font-weight: 400;
+                    padding-top: $offset-10px;
+                  }
+                }
+              }
+            }
+          }
+
+          &__form {
+            @include flex(column, center, center);
+
+            gap: $offset-32px;
+            padding: $offset-40px;
+            border: $offset-1px solid #FFFFFF33;
+            border-radius: $offset-16px;
+
+            &__top {
+              @include flex(column, center, center);
+
+              gap: $offset-12px;
+
+              &_title {
+                @include font($font-size-23px, $line-32px);
+
+                font-weight: 600;
+                color: $main-white;
+              }
+
+              &_subtitle {
+                @include font($font-size-15px, $line-21px);
+
+                font-weight: 500;
+                color: #999999;
+                text-align: center;
+              }
+            }
+
+            &__inputs {
+              @include flex(column, flex-start, flex-start);
+
+              &_label {
+                @include font($font-size-13px, $line-18px);
+
+                color: $main-white;
+                font-weight: 600;
+              }
+
+              &_input {
+                width: 320px;
+                height: $offset-40px;
+                padding: 0 $offset-16px;
+                color: $main-white;
+                background-color: #333333;
+                border-radius: $offset-8px;
+                border: $offset-1px solid #FFFFFF29;
+              }
+            }
+
+            &_button {
+              @include font($font-size-17px, $line-23px);
+
+              border: none;
+              font-weight: 600;
+              color: $main-white;
+              border-radius: $offset-30px;
+              background-color: $main-red;
+              padding: $offset-10px $offset-32px;
+            }
+          }
+        }
+      }
+
+
+      .blur {
+        width: 200px;
+        height: 100px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        bottom: -6rem;
+        left: 3rem;
+      }
+    }
+  }
+
+  h1, li, p {
+    margin: 0;
+  }
+}

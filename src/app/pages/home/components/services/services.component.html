@@ -1,0 +1,22 @@
+<section class="container services">
+  <div class="services__block">
+    <div class="services__block__titles">
+      <h1 class="services__block__titles_top h1">{{'homePage.sections.ourServices.title' | transloco}}</h1>
+      <h4 class="services__block__titles_bottom h4">{{'homePage.sections.ourServices.subTitle' | transloco}}</h4>
+    </div>
+
+    <div class="services__block__list">
+      <div class="services__block__list__cards">
+        @for(service of servicesCards; track service.id) {
+          <div class="services__block__list__cards__wrapper">
+            <div class="services__block__list__cards__wrapper_radial"></div>
+            <img class="services__block__list__cards__wrapper_img" [src]="service.icon" alt="video icon">
+            <h3 class="services__block__list__cards__wrapper_title h3">{{service.title | transloco}}</h3>
+            <p class="services__block__list__cards__wrapper_text p">{{service.text | transloco}}</p>
+            <button class="services__block__list__cards__wrapper_button p">Подробнее</button>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

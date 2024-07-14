@@ -1,0 +1,202 @@
+@import "../../../styles/@styles";
+
+:host {
+  .main-content-height {
+    background-color: $background-grey;
+    border-top: $offset-4px solid $main-red;
+
+    .header_background {
+      height: 210px;
+      background-image: url("../../../assets/images/bg-img/head-bg.png");
+      z-index: 999;
+      position: relative;
+    }
+
+    .company-nums {
+      position: relative;
+      z-index: 9999;
+
+      .blur {
+        width: 150px;
+        height: 70px;
+        background: radial-gradient(circle, $main-red 40%, $main-red 0%);
+        filter: blur(110px);
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        z-index: 1;
+      }
+    }
+
+    .contacts {
+      position: relative;
+      padding-bottom: 120px;
+      z-index: 9999;
+
+      .contacts-content {
+        &__block {
+          @include flex(column, flex-start, flex-start);
+
+          gap: $offset-40px;
+
+          &_title {
+            @include font($font-size-43px, $line-60px);
+
+            font-weight: 700;
+            color: $main-white;
+          }
+
+          &__form-map {
+            @include flex(column, flex-start, flex-start);
+
+            gap: $offset-24px;
+
+            &__form {
+              @include flex(row, flex-start, flex-start);
+
+              gap: $offset-24px;
+
+              &__left {
+                @include flex(column, flex-start, flex-start);
+
+                width: 952px;
+                height: 442px;
+                gap: $offset-32px;
+                padding: $offset-40px;
+                background-color: #00000066;
+                border-radius: $offset-16px;
+
+                &__address {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-4px;
+                }
+
+                &__phone {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-4px;
+
+                  &_title {
+                    @include font($font-size-17px, $line-23px);
+
+                    font-weight: 600;
+                    color: $main-white;
+                  }
+
+                  &_number {
+                    @include font($font-size-23px, $line-32px);
+
+                    font-weight: 400;
+                    color: $main-white;
+                  }
+                }
+
+                &__socials {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-4px;
+
+                  &_title {
+                    @include font($font-size-17px, $line-23px);
+
+                    color: $main-white;
+                    font-weight: 600;
+                  }
+
+                  &__list {
+                    @include flex(row, flex-start, flex-start);
+
+                    gap: $offset-16px;
+
+                    &__item {
+                      list-style: none;
+                    }
+                  }
+                }
+              }
+
+              &__right {
+                @include flex(column, center, center);
+
+                width: 464px;
+                height: 442px;
+                gap: $offset-32px;
+                padding: $offset-40px;
+                background-color: #00000066;
+                border-radius: $offset-16px;
+
+                &__top {
+                  text-align: center;
+
+                  &_title {
+                    @include font($font-size-23px, $line-32px);
+
+                    font-weight: 600;
+                    color: $main-white;
+                  }
+
+                  &_subtitle {
+                    @include font($font-size-15px, $line-21px);
+
+                    font-weight: 500;
+                    color: #999999;
+                  }
+                }
+
+                &__inputs {
+                  @include flex(column, flex-start, flex-start);
+
+                  gap: $offset-4px;
+
+                  &_label {
+                    @include font($font-size-13px, $line-18px);
+
+                    font-weight: 600;
+                    color: $main-white;
+                  }
+
+                  &_input {
+                    width: 320px;
+                    height: $offset-40px;
+                    color: $main-white;
+                    padding: 0 $offset-16px;
+                    border-radius: $offset-8px;
+                    background-color: #333333;
+                    border: $offset-1px solid #FFFFFF29;
+                  }
+                }
+
+                &_button {
+                  @include font($font-size-17px, $line-23px);
+
+                  border: none;
+                  font-weight: 600;
+                  color: $main-white;
+                  background-color: $main-red;
+                  border-radius: $offset-30px;
+                  padding: $offset-10px $offset-32px;
+                }
+              }
+            }
+
+            &__map {
+              &_frame {
+                border-radius: $offset-16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  h1, h3, p {
+    margin: 0;
+    color: $main-white;
+  }
+}

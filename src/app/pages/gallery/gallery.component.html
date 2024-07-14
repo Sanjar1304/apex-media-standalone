@@ -1,0 +1,45 @@
+<main class="main-content-height">
+  <div class="header_background"></div>
+  <div class="company-nums">
+    <app-company-in-nums></app-company-in-nums>
+    <div class="blur"></div>
+  </div>
+  <div class="gallery">
+    <section class="container gallery-content">
+      <div class="gallery-content__block">
+        <h1 class="gallery-content__block_title">Галерея</h1>
+        <div class="gallery-content__block__cards">
+          @for(card of galleryList; track card){
+            <div class="gallery-content__block__cards__card">
+              <img class="gallery-content__block__cards__card_img" [src]="card.image" [alt]="card.imageName">
+              <p class="gallery-content__block__cards__card_name">{{ card.imageName | transloco }}</p>
+            </div>
+          } @empty {
+            <div>There is no gallery cards</div>
+          }
+        </div>
+        <div class="gallery-content__block__paginator">
+          <button class="gallery-content__block__paginator__button" (click)="setPage(currentPage - 1)" [disabled]="currentPage === 1">
+            <img class="gallery-content__block__paginator__button_icon" ngSrc="./assets/icons/chevron-right.svg" alt=""
+                 height="14" width="8">
+          </button>
+          <div class="gallery-content__block__paginator__nums">
+            @for(page of [].constructor(totalPages); track page){
+              <div
+                class="gallery-content__block__paginator__nums_item"
+                [ngClass]="{'active' : isPageActive($index + 1)}"
+                (click)="setPage($index + 1)">
+                {{ $index + 1}}
+              </div>
+            }
+          </div>
+          <button class="gallery-content__block__paginator__button" (click)="setPage(currentPage + 1)" [disabled]="currentPage === totalPages">
+            <img class="gallery-content__block__paginator__button_icon" ngSrc="./assets/icons/chevron-left.svg" alt=""
+                 height="14" width="8">
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="blur"></div>
+  </div>
+</main>

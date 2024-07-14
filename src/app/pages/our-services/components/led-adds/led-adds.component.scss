@@ -1,0 +1,65 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .led-adds {
+    &__block {
+      @include flex(column, flex-start, flex-start);
+      gap: $offset-40px;
+
+      &__cards {
+        @include flex(row, flex-start, space-between);
+        gap: $offset-24px;
+        width: 1440px !important;
+        padding-bottom: 48px;
+        position: relative;
+
+        &__card {
+          @include flex(column, flex-start, space-between);
+          gap: $offset-24px !important;
+          padding: $offset-40px;
+          border-radius: $offset-16px;
+          background-color: rgba(0, 0, 0, 0.4);
+
+          &_img {
+            width: 384px;
+            position: relative;
+            z-index: 0;
+          }
+
+          &_icon {
+            position: absolute;
+            top: 205px;
+            left: 50px;
+            z-index: 999;
+          }
+
+          &__content {
+            @include flex(column, flex-start, space-between);
+            gap: 12px;
+          }
+        }
+      }
+
+      &__pagination {
+        &_items {
+          display: inline-block;
+          width: $offset-32px;
+          border-radius: $offset-40px;
+          background-color: $light-grey;
+          margin-right: $offset-8px;
+          position: absolute;
+          bottom: $offset-10px;
+        }
+
+        &_items.active {
+          background-color: $main-red;
+          border-radius: $offset-40px;
+          width: $offset-32px;
+        }
+      }
+    }
+  }
+}
+
+
+

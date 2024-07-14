@@ -1,0 +1,51 @@
+@import "../../../../../styles/@styles";
+
+:host {
+  .partners {
+
+    &__block {
+      @include flex(column, flex-start, space-between);
+      gap: $offset-40px;
+
+      &__top {
+        gap: $offset-3px;
+      }
+
+      &__list {
+        &__items {
+          @include flex(row, flex-start, flex-start);
+
+          flex-wrap: wrap;
+          gap: 24px !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .partners {
+
+      &__block {
+        @include flex(column, flex-start, flex-start);
+
+        max-width: 328px;
+        width: 100%;
+        gap: $offset-20px;
+        padding: 24px 0;
+
+        &__list {
+          @include flex(row, center, flex-start);
+          width: 100%;
+          scrollbar-width: none;
+          overflow-x: scroll;
+
+          &__items {
+            @include flex(row, flex-start, flex-start);
+            flex-wrap: nowrap;
+            gap: 16px;
+          }
+        }
+      }
+    }
+  }
+}
