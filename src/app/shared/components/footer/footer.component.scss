@@ -1,0 +1,161 @@
+@import "../../../../styles/@styles";
+
+:host {
+  .footer {
+    width: 100%;
+    padding: $offset-48px 0;
+    z-index: 99999999999;
+    position: relative;
+    background-color: $background-black;
+
+    &__content {
+      @include flex(column, flex-start, space-between);
+
+      &__top {
+        @include flex(row, flex-start, space-between);
+
+        width: 100%;
+        padding-bottom: $offset-48px;
+
+        &__menu {
+          @include flex(row, flex-start, space-between);
+
+          gap: $offset-24px;
+
+          &_items {
+            padding: $offset-18px 0;
+            color: $light-grey;
+          }
+        }
+
+        &__socials {
+          @include flex(row, center, space-between);
+
+          gap: $offset-32px;
+
+          &__phone {
+            @include flex(row, center, space-between);
+
+            gap: $offset-12px;
+            padding: 1rem 0;
+
+            &_number {
+              color: $main-red;
+            }
+          }
+
+          &__icons {
+            @include flex(row, flex-start, space-between);
+
+            gap: 1rem;
+          }
+
+          &_button {
+            @include flex(row, center, center);
+
+            color: $main-white;
+            padding: $offset-10px $offset-32px;
+            border: $offset-2px solid $light-grey;
+            border-radius: $offset-30px;
+            background-color: $background-black;
+          }
+        }
+      }
+
+      &_divider {
+        width: 100%;
+        border: .5px solid #999999;
+        opacity: 10%;
+      }
+
+      &__bottom {
+        @include flex(row, center, space-between);
+
+        gap: $offset-72px;
+        padding-top: $offset-48px;
+
+        &__text {
+          @include flex(column, flex-start, space-between);
+
+          gap: $offset-8px;
+          color: $light-grey;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    .footer {
+      width: 360px;
+
+      &__content {
+        @include flex(column, flex-start, space-between);
+
+        &__top {
+          @include flex(row, flex-start, center);
+
+          width: 100%;
+          padding-bottom: $offset-32px;
+
+          &__menu {
+            display: none;
+          }
+
+          &__socials {
+            @include flex(column, center, center);
+
+            gap: $offset-16px;
+
+            &__phone {
+              @include flex(row, center, space-between);
+
+              gap: $offset-12px;
+              padding: 1rem 0;
+
+              &_number {
+                color: $main-red;
+              }
+            }
+
+            &__icons {
+              @include flex(row, flex-start, space-between);
+
+              gap: 1rem;
+            }
+
+            &_button {
+              @include flex(row, center, center);
+
+              color: $main-white;
+              padding: $offset-10px $offset-32px;
+              border: $offset-2px solid $light-grey;
+              border-radius: $offset-30px;
+              background-color: $background-black;
+            }
+          }
+        }
+
+        &_divider {
+          width: 100%;
+          border: .5px solid #999999;
+          opacity: 10%;
+        }
+
+        &__bottom {
+          @include flex(column, center, center);
+
+          gap: $offset-32px;
+          padding-top: $offset-32px;
+
+          &__text {
+            @include flex(column, center, center);
+
+            gap: $offset-8px;
+            color: $light-grey;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

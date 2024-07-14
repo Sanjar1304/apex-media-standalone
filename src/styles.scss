@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import "styles/@styles";
+@import "bootstrap";
+
+* {
+  font-family: $montserrat;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  @include flex(column, center, flex-start);
+
+  min-width: 100%;
+
+  > :first-child {
+    width: 1440px;
+  }
+
+  @media screen and (max-width: 360px) {
+    > :first-child {
+      width: 328px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+$montserrat: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  src: url("../assets/fonts/montserrat/static/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  src: url("../assets/fonts/montserrat/static/Montserrat-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  src: url("../assets/fonts/montserrat/static/Montserrat-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  src: url("../assets/fonts/montserrat/static/Montserrat-Bold.ttf") format('truetype');
+}
+
+.h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 60px;
+  font-family: "Montserrat Bold", sans-serif;
+}
+
+.h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 47px;
+  font-family: "Montserrat Bold", sans-serif;
+}
+
+.h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 23px;
+  line-height: 32px;
+  font-family:  "Montserrat Semibold", sans-serif;
+}
+
+.h4 {
+  margin: 0;
+  color: #FF0008;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-family: "Montserrat Semibold", sans-serif;
+}
+
+.p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px !important;
+  line-height: 23px !important;
+  font-family: "Montserrat Semibold", sans-serif;
+}
+
+.nav-menu-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Montserrat Semibold", sans-serif;
+}
+
+
+.h3-slider {
+  margin: 0;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 23px;
+  line-height: 32px;
+  font-family:  "Montserrat Semibold", sans-serif;
+}
+
+.p-slider-bold {
+  margin: 0;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 18px;
+  font-family:  "Montserrat Semibold", sans-serif;
+}
+
+.p-slider-light {
+  margin: 0;
+  font-weight: 100;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 18px;
+  font-family:  "Montserrat Semibold", sans-serif;
+}
+
+@media screen and (max-width: 360px) {
+  .h1 {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+
+  .h3 {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
+
+  .h4 {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
+
+  .p{
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}

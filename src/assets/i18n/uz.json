@@ -1,0 +1,261 @@
+{
+  "homepage": {
+    "navMenus": {
+      "aboutUs": "Kompaniya haqida",
+      "ourServices": "Bizning xizmatlar",
+      "partners": "Hamkorlar",
+      "news": "Yangiliklar",
+      "contacts": "Kontaktlar"
+    },
+    "sections": {
+      "homePageTitle": "Sizning brendingiz ko'rinadi - maksimal ko'rinish uchun bilbordlar va LED ekranlar!",
+      "companyInNums": {
+        "text1": "Toshkentning asosiy ko‘chalarida LED ekranlar",
+        "text2": "Odamlar gavjum joylarda reklama taxtalari"
+      },
+      "reason": {
+        "title1":"Keng auditoriyani qamrab olish",
+        "title2": "Ogohlikni oshirish",
+        "title3": "Ijodiy imkoniyatlar",
+        "text1": "Ekranlar va bilbordlar mashhur joylarda joylashgan bo'lib, ko'plab potentsial mijozlarni jalb qiladi.",
+        "text2": "Ekranlar va bilbordlarda tez-tez reklamalarni ko'rish brendingiz haqida xabardorlikni oshirishga yordam beradi.",
+        "text3": "Katta ekran o‘lchamlari va bilbordlar reklama dizayniga ijodiy yondashish imkonini beradi, bu sizning brendingizni olomondan ajralib turadi."
+      },
+      "aboutUs": {
+        "title": "Apex Media",
+        "subTitle": "Apex Media",
+        "cards": {
+          "card1": {
+            "text": "Fishtext.ru veb-sayti dizaynerga, maket dizayneriga, veb-masterga rus tilida ko'proq yoki kamroq mazmunli matnning bir nechta paragraflarini yaratishga yordam beradi va yangi notiqga uyda notiqlik mahoratini oshirishga yordam beradi. Generatorni yaratishda biz taniqli universal nutq kodidan foydalandik. Matn tasodifiy ravishda har bir paragrafda ikkitadan o'ntagacha bo'lgan paragraflarda yaratilgan, bu sizga matnni vizual va eshitish uchun yanada jozibali va jonli qilish imkonini beradi."
+          },
+          "card2": {
+            "text": "Fishtext.ru veb-sayti dizaynerga, maket dizayneriga, veb-masterga rus tilida ko'proq yoki kamroq mazmunli matnning bir nechta paragraflarini yaratishga yordam beradi va yangi notiqga uyda notiqlik mahoratini oshirishga yordam beradi. Generatorni yaratishda biz taniqli universal nutq kodidan foydalandik. Matn tasodifiy ravishda har bir paragrafda ikkitadan o'ntagacha bo'lgan paragraflarda yaratilgan, bu sizga matnni vizual va eshitish uchun yanada jozibali va jonli qilish imkonini beradi."
+          },
+          "card3": {
+            "text": "Fishtext.ru veb-sayti dizaynerga, maket dizayneriga, veb-masterga rus tilida ko'proq yoki kamroq mazmunli matnning bir nechta paragraflarini yaratishga yordam beradi va yangi notiqga uyda notiqlik mahoratini oshirishga yordam beradi. Generatorni yaratishda biz taniqli universal nutq kodidan foydalandik. Matn tasodifiy ravishda har bir paragrafda ikkitadan o'ntagacha bo'lgan paragraflarda yaratilgan, bu sizga matnni vizual va eshitish uchun yanada jozibali va jonli qilish imkonini beradi."
+          },
+          "card4": {
+            "text": "Fishtext.ru veb-sayti dizaynerga, maket dizayneriga, veb-masterga rus tilida ko'proq yoki kamroq mazmunli matnning bir nechta paragraflarini yaratishga yordam beradi va yangi notiqga uyda notiqlik mahoratini oshirishga yordam beradi. Generatorni yaratishda biz taniqli universal nutq kodidan foydalandik. Matn tasodifiy ravishda har bir paragrafda ikkitadan o'ntagacha bo'lgan paragraflarda yaratilgan, bu sizga matnni vizual va eshitish uchun yanada jozibali va jonli qilish imkonini beradi."
+          },
+          "card5": {
+            "text": "Fishtext.ru veb-sayti dizaynerga, maket dizayneriga, veb-masterga rus tilida ko'proq yoki kamroq mazmunli matnning bir nechta paragraflarini yaratishga yordam beradi va yangi notiqga uyda notiqlik mahoratini oshirishga yordam beradi. Generatorni yaratishda biz taniqli universal nutq kodidan foydalandik. Matn tasodifiy ravishda har bir paragrafda ikkitadan o'ntagacha bo'lgan paragraflarda yaratilgan, bu sizga matnni vizual va eshitish uchun yanada jozibali va jonli qilish imkonini beradi."
+          }
+        }
+      },
+      "ourServices": {
+        "title": "Bizning xizmatlar",
+        "subTitle": "Biz taklif etamiz",
+        "cards": {
+          "left": {
+            "title": "LED ekranlarda reklama",
+            "text": "Ekranlar va bilbordlar mashhur joylarda joylashgan bo'lib, ko'plab potentsial mijozlarni jalb qiladi."
+          },
+          "right": {
+            "title": "Billboard reklama",
+            "text": "Ekranlar va bilbordlar mashhur joylarda joylashgan bo'lib, ko'plab potentsial mijozlarni jalb qiladi."
+          }
+        }
+      },
+      "partners": {
+        "title": "Ular bizga ishonishadi",
+        "subTitle": "Bizning mijozlarimiz"
+      },
+      "faq": {
+        "title": "Ko'p so'raladigan savollar",
+        "subTitle": "KSS",
+        "questions": {
+          "question1": {
+            "title": "Videolar kuniga necha marta ekranda ko'rsatiladi?",
+            "text": "Og'ir yuk bilan 150 marta, o'rtacha yuk bilan 250 marta va minimal yuk bilan 300 marta kafolatlangan."
+          },
+          "question2": {
+            "title": "O‘zbekiston viloyatlarida ekranlar bormi?",
+            "text": "Og'ir yuk bilan 150 marta, o'rtacha yuk bilan 250 marta va minimal yuk bilan 300 marta kafolatlangan."
+          },
+          "question3": {
+            "title": "Sizda qanday ekran o'lchamlari bor?",
+            "text": "Og'ir yuk bilan 150 marta, o'rtacha yuk bilan 250 marta va minimal yuk bilan 300 marta kafolatlangan."
+          },
+          "question4": {
+            "title": "Minimal reklama muddati qancha?",
+            "text": "Og'ir yuk bilan 150 marta, o'rtacha yuk bilan 250 marta va minimal yuk bilan 300 marta kafolatlangan."
+          }
+        }
+      }
+    },
+    "footer": {
+      "bottomText": "© 2024 Apex Media. Barcha xizmatlar litsenziyalangan. Saytdagi ma'lumotlardan foydalanganda saytga havola kerak."
+    }
+  },
+  "servicePage": {
+    "sliderTitle": "LED ekranlarda reklama",
+    "slider0": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider1": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider2": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider3": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider4": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider5": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider6": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider7": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider8": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider9": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider10": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider11": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider12": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    },
+    "slider13": {
+      "cardTitle": "LED ekran S1 TATA",
+      "address": {
+        "title": "Manzil",
+        "street": "O'zbekistan Ovozi ko'chasi"
+      },
+      "referencePoint": {
+        "title": "Orintir",
+        "building": "Le Grande Plaza mehmonxonasi"
+      },
+      "size": "O'lcham"
+    }
+  }
+}

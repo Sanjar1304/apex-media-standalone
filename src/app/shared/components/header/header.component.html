@@ -1,0 +1,23 @@
+<header class="container header">
+  <div class="header__block">
+    <img class="header__block_logo" ngSrc="./assets/logos/apex-logo-header.svg" alt="" height="56" width="128">
+    <div class="header__block__items">
+      <nav class="header__block__items__nav">
+        @for(routes of navMenus; track routes.id){
+          <a class="header__block__items__nav_menu nav-menu-text" [routerLink]="routes.path">{{routes.label | transloco }}</a>
+        }
+      </nav>
+      <div class="header__block__items__phone">
+        <img class="header__block__items__phone_img" ngSrc="./assets/icons/phone.2%201.svg" alt="phone"
+             height="24" width="24">
+        <a class="header__block__items__phone_number p" href="tel:998000000000">+998 00 000 00 00</a>
+      </div>
+      <div class="header__block__items__lang p">
+        RU
+      </div>
+      <button class="header__block__items__lang-btn">
+        <img class="header__block__items__lang-btn_icon" ngSrc="./assets/icons/menu.svg" height="24" width="24" alt="menu icon">
+      </button>
+    </div>
+  </div>
+</header>

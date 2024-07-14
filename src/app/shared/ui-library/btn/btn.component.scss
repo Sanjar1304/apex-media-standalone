@@ -1,0 +1,30 @@
+@import "../../../../styles/@styles";
+
+:host {
+  --ui-library-primary-color: #{$main-red};
+  --ui-library-primary-btn-text-color: #{$main-white};
+  --ui-library-primary-color-hover: #cc0006;
+  --ui-library-btn-font-size: #{$font-size-24px};
+
+  display: inline-block;
+  width: max-content;
+  height: 56px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: $offset-16px $offset-32px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &.app-btn-secondary {
+    background-color: transparent;
+    color: var(--ui-library-primary-btn-text-color);
+    border: 2px solid $background-grey;
+  }
+
+  &.app-btn-primary {
+    background-color: var(--ui-library-primary-color);
+    color: var(--ui-library-primary-btn-text-color);
+    border: none;
+  }
+}

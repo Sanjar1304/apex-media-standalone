@@ -1,0 +1,276 @@
+
+{
+  "homePage": {
+    "navMenus": {
+      "aboutUs": "About company",
+      "ourServices": "Our services",
+      "partners": "Partners",
+      "news": "News",
+      "contacts": "Contacts"
+    },
+    "sections": {
+      "homePageTitle": "Your brand is in sight – billboards and LED screens for maximum visibility!",
+      "companyInNums": {
+        "text1": "LED screens on the main streets of Tashkent",
+        "text2": "Billboards in crowded locations"
+      },
+      "reason": {
+        "title1":"Wide audience reach",
+        "title2": "Increased recognition",
+        "title3": "Creative possibilities",
+        "text1": "Screens and billboards are located in popular places, attracting a large number of potential customers.",
+        "text2": "Frequent exposure to advertising on screens and billboards helps increase your brand awareness.",
+        "text3": "Large screens and billboards allow for creative advertising designs, making your brand stand out from the crowd."
+      },
+      "aboutUs": {
+        "title": "Apex Media",
+        "subTitle": "Apex Media",
+        "cards": {
+          "card1": {
+            "text": "The site fishtext.ru will help a designer, layout designer, webmaster generate several paragraphs of more or less meaningful text of fish in Russian, and a novice speaker to hone the skill of public speaking at home. When creating the generator, we used the well-known universal code of speeches. The text is generated in paragraphs randomly from two to ten sentences in a paragraph, which allows you to make the text more attractive and lively for visual and auditory perception."
+          },
+          "card2": {
+            "text": "The site fishtext.ru will help a designer, layout designer, webmaster generate several paragraphs of more or less meaningful text of fish in Russian, and a novice speaker to hone the skill of public speaking at home. When creating the generator, we used the well-known universal code of speeches. The text is generated in paragraphs randomly from two to ten sentences in a paragraph, which allows you to make the text more attractive and lively for visual and auditory perception."
+          },
+          "card3": {
+            "text": "The site fishtext.ru will help a designer, layout designer, webmaster generate several paragraphs of more or less meaningful text of fish in Russian, and a novice speaker to hone the skill of public speaking at home. When creating the generator, we used the well-known universal code of speeches. The text is generated in paragraphs randomly from two to ten sentences in a paragraph, which allows you to make the text more attractive and lively for visual and auditory perception."
+          },
+          "card4": {
+            "text": "The site fishtext.ru will help a designer, layout designer, webmaster generate several paragraphs of more or less meaningful text of fish in Russian, and a novice speaker to hone the skill of public speaking at home. When creating the generator, we used the well-known universal code of speeches. The text is generated in paragraphs randomly from two to ten sentences in a paragraph, which allows you to make the text more attractive and lively for visual and auditory perception."
+          },
+          "card5": {
+            "text": "The site fishtext.ru will help a designer, layout designer, webmaster generate several paragraphs of more or less meaningful text of fish in Russian, and a novice speaker to hone the skill of public speaking at home. When creating the generator, we used the well-known universal code of speeches. The text is generated in paragraphs randomly from two to ten sentences in a paragraph, which allows you to make the text more attractive and lively for visual and auditory perception."
+          }
+        }
+      },
+      "ourServices": {
+        "title": "Our services",
+        "subTitle": "We offer",
+        "cards": {
+          "left": {
+            "title": "Advertising on LED screens",
+            "text": "Screens and billboards are located in popular places, attracting a large number of potential customers."
+          },
+          "right": {
+            "title": "Billboard advertising",
+            "text": "Screens and billboards are located in popular places, attracting a large number of potential customers."
+          }
+        }
+      },
+      "partners": {
+        "title": "They will trust us",
+        "subTitle": "our clients"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subTitle": "FAQ",
+        "questions": {
+          "question1": {
+            "title": "How many times a day are videos shown on the screen?",
+            "text": "Guaranteed 150 times under heavy load, 250 times under medium load and 300 times under minimum load respectively."
+          },
+          "question2": {
+            "title": "Are there screens in the regions of Uzbekistan?",
+            "text": "Guaranteed 150 times under heavy load, 250 times under medium load and 300 times under minimum load respectively."
+          },
+          "question3": {
+            "title": "What screen sizes do you have?",
+            "text": "Guaranteed 150 times under heavy load, 250 times under medium load and 300 times under minimum load respectively."
+          },
+          "question4": {
+            "title": "What is the minimum advertising period?",
+            "text": "Guaranteed 150 times under heavy load, 250 times under medium load and 300 times under minimum load respectively."
+          }
+        }
+      }
+    },
+    "footer": {
+      "bottomText": "© 2024 Apex Media. All services are licensed. When using information on the site, a link to the site is required."
+    }
+  },
+  "servicePage": {
+    "sliderTitle": "Advertising on LED screens",
+    "slider0": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider1": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+
+    },
+    "slider2": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider3": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider4": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider5": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider6": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider7": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider8": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider9": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider10": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+
+    },
+    "slider11": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider12": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider13": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    },
+    "slider14": {
+      "cardTitle": "LED screen С1 ТАТА",
+      "address": {
+        "title": "Address",
+        "street": "Uzbekistan Ovozi Street"
+      },
+      "referencePoint": {
+        "title": "Reference Point",
+        "building": "Hotel Le Grande Plaza"
+      },
+      "size": "Size"
+    }
+  }
+}
